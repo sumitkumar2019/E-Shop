@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>You have {{itemCount}} items in your shopping cart</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Remove From Cart</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in orderedItem track by $index">
+            <td>{{item.productName}}</td>
+            <td>{{item.productSummary}}</td>
+            <td>{{item.price}}</td>
+            <td><button type="button" class="btn btn-danger" ng-click="removeItems(item)">Remove</button></td>
+        </tr>
+
+        <tr ng-show="itemCount > 0">
+            <td><h3>Total</h3></td>
+            <td></td>
+            <td><h3>{{total}}</h3></td>
+            <td><a href="#/payment" class="btn btn-success" role="button">Check Out</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

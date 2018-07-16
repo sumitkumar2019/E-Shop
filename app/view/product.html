@@ -1,0 +1,28 @@
+<div id="productList" class="container" ng-init="getItems()">
+
+    <div class="row">
+            <div class="input-group">
+                <input type="text" id="myInput" ng-model="globalSearch.store" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="Search..">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-dark">Search</button>
+                    <select id="selectedSearch" class="selectpicker" ng-model="selectedCriteria" ng-options="x for (x, y) in searchOptions">
+                    </select>
+                </div>
+            </div>
+            </div>
+    <br>
+    <div class="row">
+        <div id="pname" class="col-sm-4 card" ng-repeat="item in itemList | filter:globalSearch" >
+            <div id="productDetails" class="text-center">
+                <h4>{{item.productName}}</h4>
+                <img src={{item.image}} class="rounded"
+                     width="154" height="136">
+                <p>{{item.productSummary}}</p>
+                <div id="store"><p>{{item.store}}</p></div>
+                <h3><span class="badge badge-pill badge-dark">Price: {{item.price}} {{item.currency}}</span></h3>
+            </div>
+            <button type="button" class="btn btn-warning pull-right" ng-click="addItems(item)">Add to Cart</button>
+            <a href="#/description/{{item.productId}}" class="btn btn-info" role="button">Details</a>
+        </div>
+    </div>
+</div>

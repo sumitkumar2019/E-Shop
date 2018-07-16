@@ -1,0 +1,40 @@
+{
+  "items":[
+    {
+      "productId":"001",
+      "productName":"Lenovo Laptop",
+      "productSummary": "abcde",
+      "price":"600",
+      "currency":"Euro",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/41q8sfknm0L._AC_US218_.jpg",
+      "imageDescription":"laptop",
+      "description":"fjsdfsdfsdfsdfdsfdsfsdfdsdsfdsfdsfdsfdsfdsfsdfdsfdsfdsfdsfds",
+      "store":"India",
+      "available":20
+    },
+    {
+      "productId":"002",
+      "productName":"Lenovo Laptop",
+      "productSummary": "abcde",
+      "price":"600",
+      "currency":"Euro",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/41q8sfknm0L._AC_US218_.jpg",
+      "imageDescription":"laptop",
+      "description":"fdsfdsfsdfvccvcxfsdfsdfdsfdsfsdfdsdsfdsfdsfdsfdsfdsfsdfdsfdsfdsfdsfds",
+      "store":"Finland",
+      "available":20
+    },
+    {
+      "productId":"003",
+      "productName":"Lenovo Laptop",
+      "productSummary": "abcde",
+      "price":"600",
+      "currency":"Euro",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/41q8sfknm0L._AC_US218_.jpg",
+      "imageDescription":"laptop",
+      "description":"fjsdewrewrewrwsdfsdfdsfdsfsdfdsdsfdsfdsfdsfdsfdsfsdfdsfdsfdsfdsfds",
+      "store":"Finland",
+      "available":20
+    }
+  ]
+}

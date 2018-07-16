@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row">
+    <div class="col-sm">
+        <div><h4>{{item.productName}}</h4></div>
+        <img src={{item.image}} class="rounded"
+             alt="{{item.imageDescription}}" width="354" height="336">
+    </div>
+    <div class="col-sm">
+        <div id="productDetails">
+            <p>{{item.productId}}</p>
+            <p>{{item.productName}}</p>
+            <p>{{item.productSummary}}</p>
+            <p>{{item.description}}</p>
+            <p>Total: {{item.available}} Available in Store: {{item.store}}</p>
+        </div>
+        <h3><span class="badge badge-pill badge-dark">Price: {{item.price}} {{item.currency}}</span></h3>
+        <button type="button" class="btn btn-warning" ng-click="addItems(item)">Add to Cart</button>
+        <a href="#/" class="btn btn-info" role="button"><-Back</a>
+    </div>
+</div>
+</div>
